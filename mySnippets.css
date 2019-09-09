@@ -1,0 +1,29 @@
+/**
+ ** Bootstrap - Veticall align modal
+ **/
+
+ .modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/**
+ ** Bootstrap - Disable modal auto close when user click outside modal
+ **/
+
+$.fn.modal.prototype.constructor.Constructor.DEFAULTS.backdrop = 'static';
+$.fn.modal.prototype.constructor.Constructor.DEFAULTS.keyboard = false;
